@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Auth from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { withAuthenticator } from 'aws-amplify-react';
+import '@aws-amplify/ui/dist/style.css';
 import './App.css';
 
 Auth.configure(awsconfig);
