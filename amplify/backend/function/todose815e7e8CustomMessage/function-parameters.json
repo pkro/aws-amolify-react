@@ -1,0 +1,24 @@
+{
+    "trigger": true,
+    "modules": [
+        "verification-link"
+    ],
+    "parentResource": "todose815e7e8",
+    "functionName": "todose815e7e8CustomMessage",
+    "resourceName": "todose815e7e8CustomMessage",
+    "parentStack": "auth",
+    "triggerEnvs": [
+        {
+            "key": "RESOURCENAME",
+            "value": "resourceName"
+        }
+    ],
+    "triggerDir": "/home/pk/.nvm/versions/node/v12.17.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/CustomMessage",
+    "triggerTemplate": "CustomMessage.json.ejs",
+    "roleName": "todose815e7e8CustomMessage",
+    "skipEdit": true,
+    "REDIRECTURL": "http://www.google.com",
+    "EMAILSUBJECT": "Account confirmation",
+    "EMAILMESSAGE": "Thank you for registering! Please confirm your account using the link below.",
+    "RESOURCENAME": "resourceName"
+}

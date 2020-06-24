@@ -1,0 +1,27 @@
+{
+    "todos": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-todos-todos-180228-authRole",
+            "UnauthRoleArn": "arn:aws:iam::583369252867:role/amplify-todos-todos-180228-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::583369252867:role/amplify-todos-todos-180228-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-todos-todos-180228-deployment",
+            "UnauthRoleName": "amplify-todos-todos-180228-unauthRole",
+            "StackName": "amplify-todos-todos-180228",
+            "StackId": "arn:aws:cloudformation:us-east-2:583369252867:stack/amplify-todos-todos-180228/1c5b6dd0-b634-11ea-a79a-02848c93abf4",
+            "AmplifyAppId": "d2qloos4jbvk5s"
+        },
+        "categories": {
+            "function": {
+                "todose815e7e8CustomMessage": {
+                    "REDIRECTURL": "http://www.google.com",
+                    "EMAILSUBJECT": "Account confirmation",
+                    "EMAILMESSAGE": "Thank you for registering! Please confirm your account using the link below."
+                }
+            },
+            "auth": {
+                "todose815e7e8": {}
+            }
+        }
+    }
+}
