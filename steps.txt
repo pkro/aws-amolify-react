@@ -1,0 +1,59 @@
+- create react project
+npx create-react-app appname
+
+cd appname
+
+---- Not project specific ----
+amplify configure
+
+create user, all default settings
+
+copy user, access key id, secret access key (copy NOW!)
+
+enter key id / secret key
+profile default (what is this?)
+---- / Not project specific ----
+
+go to project
+amplify init
+amplify hosting add
+choose amazon cloudfront and s3
+dev (s3 only with http)
+
+amplify publish
+-> project is publioshed
+
+in aws web console, choose s3 (not necessary, just to check)
+deployment bucket: for management of entire project (configs etc)
+hosting bucket: where it's running the app, the actual html / js code
+
+after doing changes localy, amplify publish to go live
+
+
+User authentication:
+for example: cognito / identity pool / user pool (wut?)
+authenticated / unauthenticated
+
+amplify add authen
+
+ Do you want to use the default authentication and security configuration? Default configuration
+ Warning: you will not be able to edit these selections. 
+ How do you want users to be able to sign in? Username
+ Do you want to configure advanced settings? Yes, I want to make some additional changes.
+ Warning: you will not be able to edit these selections. 
+ What attributes are required for signing up? Email
+ Do you want to enable any of the following capabilities? Email Verification Link with Redirect
+? Enter the URL that your users will be redirected to upon account confirmation: http://www.google.com
+? Enter the subject for your custom account confirmation email: Account confirmation
+? Enter the body text for your custom account confirmation email (this will appear before the link URL): Thank you for registering! Please confirm your account using the link below.
+
+npm add aws-amplify aws-amplify-react
+
+App.js:
+import Auth from 'aws-amplify';
+import awsconfig from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react';
+import '@aws-amplify/ui/dist/style.css';
+Auth.configure(awsconfig);
+...
+export default withAuthenticator(App);
